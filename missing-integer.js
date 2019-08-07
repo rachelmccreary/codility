@@ -22,7 +22,6 @@ N is an integer within the range [1..100,000];
 each element of array A is an integer within the range [−1,000,000..1,000,000].
 
 */
-
 function solution(A) {
 	let set1 = new Set(A);
 	let max = Math.max.apply(Math, A);

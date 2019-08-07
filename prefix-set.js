@@ -1,5 +1,7 @@
 /* 
 
+Prefix Set
+
 https://app.codility.com/demo/take-sample-test/ps/
 
 A non-empty array A consisting of N integers is given. The first covering prefix of array A is the smallest integer P such that 0≤P<N and such that every value that occurs in array A also occurs in sequence A[0], A[1], ..., A[P].
@@ -34,17 +36,16 @@ N is an integer within the range [1..1,000,000];
 each element of array A is an integer within the range [0..N−1].
 
 */
-
 function solution(A) {
-	let set1 = new Set();
-	let firstCoveringPrefix = 0;
+    let set1 = new Set();
+    let firstCoveringPrefix = 0;
 
-	for (let i = 0; i < A.length; i++) {
-		if (!set1.has(A[i])) {
-			set1.add(A[i]);
-			firstCoveringPrefix = i;
-		}
-	}
+    for (let i = 0; i < A.length; i++) {
+        if (!set1.has(A[i])) {
+            set1.add(A[i]);
+            firstCoveringPrefix = i;
+        }
+    }
 
-	return firstCoveringPrefix;
+    return firstCoveringPrefix;
 }
