@@ -42,18 +42,6 @@ each element of array A is an integer within the range [−1,000..1,000].
 In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment.
 
 */
-// function solution(A, K) {
-// 	if (A.length != K) {
-// 		let arr1 = A.slice(K-1);
-//         A.splice(K-1);
-//         for (let i = 0; i < A.length; i++) {
-//     	    arr1.push(A[i]);
-//         }
-//         return arr1;
-// 	} else {
-// 		return A;
-// 	}
-// }
 function solution(A, K) {
     if (A.length) {
         for (let i = 0; i < K; i++) {
